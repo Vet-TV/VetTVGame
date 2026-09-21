@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "VetTVGame (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "VetTVGame (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

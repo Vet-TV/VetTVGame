@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VetTV Game OS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hud">
+  <header>
+    <img src="logo.svg" alt="VetTV Shield" id="shield"/>
+    <h1>VetTV Gaming OS - WebUI 2.0 + DX12</h1>
+  </header>
+  <main>
+    <div class="stat-row">
+      <span>Money: $<span id="money">100</span></span>
+      <span>Lemons: <span id="lemons">0</span></span>
+      <span>Weather: <span id="weather">Sunny</span></span>
+    </div>
+    <button onclick="buyLemons(10)">Buy 10 Lemons (calls C++ DX12 Spawn)</button>
+    <button onclick="setWeatherNative(0.8, 1.2)">Set Storm Weather (DX12 Lighting)</button>
+    <button onclick="toggleRaytracing()">Toggle Raytracing Check</button>
+  </main>
+  <footer>
+    <a href="https://vet-tv.github.io/vettv-privacy/" target="_blank">Privacy - No Collection, Local Saves Only</a> |
+    <span>Outlook: vettv@outlook.com</span> |
+    <span>Partners: Ubisoft 4yr / Outright 3yr / Boosteroid 3-4yr</span>
+  </footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

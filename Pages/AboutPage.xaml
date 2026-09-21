@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="VetTVGame.Pages.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:VetTVGame.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Padding="24,16,24,16" Spacing="16">
+        <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="About" />
+        <TextBlock Text="Vet GamingTV" />
+        <HyperlinkButton
+            Content="Privacy: No Collection, Local Saves Only"
+            NavigateUri="https://vet-tv.github.io/vettv-privacy/" />
+        <TextBlock Text="Partners: Ubisoft 4yr / Outright 3yr / Boosteroid 3-4yr" TextWrapping="Wrap" />
+    </StackPanel>
+</Page>

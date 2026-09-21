@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="VetTVGame.Pages.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:VetTVGame.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Padding="24,16,24,16" RowSpacing="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Settings" />
+        <ToggleSwitch
+            x:Name="ThemeToggle"
+            Grid.Row="1"
+            Header="Dark mode"
+            IsOn="{x:Bind IsDarkMode, Mode=TwoWay}"
+            Toggled="ThemeToggle_Toggled"
+            Loaded="ThemeToggle_Loaded" />
+        <HyperlinkButton
+            Grid.Row="2"
+            Content="VetTV privacy policy"
+            NavigateUri="https://vet-tv.github.io/vettv-privacy/" />
+    </Grid>
+</Page>
