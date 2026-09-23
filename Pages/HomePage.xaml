@@ -11,12 +11,20 @@
     <Grid Padding="24,16,24,16" RowSpacing="16">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Home" />
+        <TextBlock
+            x:Name="BridgeStatusText"
+            Grid.Row="1"
+            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+            Style="{StaticResource CaptionTextBlockStyle}"
+            Text=""
+            Visibility="Collapsed" />
         <WebView2
             x:Name="GameWebView"
-            Grid.Row="1"
+            Grid.Row="2"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch" />
     </Grid>
